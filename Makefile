@@ -17,7 +17,10 @@ Cardguess.o Cardguess.hi: Cardguess.hs State.o Combinations.o
 
 Response.o:	Card.hi
 
-.PHONY: clean
+.PHONY: clean run
 
 clean:
-	rm -rf *.o *.hi
+	rm -rf *.o *.hi Cardguesstest
+
+run: Cardguesstest
+	./Cardguesstest AD 6C 9C 4H KH
